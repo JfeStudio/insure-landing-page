@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font format */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+/* 
+font-family: 'DM Serif Display', serif;
+font-family: 'Karla', sans-serif; */
+
+/* debug css */
+.borders {
+  @apply border border-slate-600;
+}
+
+.borders-debug {
+  @apply border border-holy-blur;
+}
+
+/* navscrolling */
+.header-fixed {
+  /* @apply bg-transparent; */
+  /* backdrop-filter: blur(0.3rem); */
+  /* -webkit-backdrop-filter: blur(0.3rem); */
+  box-shadow: 0 1px 10px rgba(0 0 0 / 0.1);
+}
+
+/* menu hamburger */
+#navigation[data-visible="true"] {
+  @apply top-14 h-[28rem] w-4/5 opacity-100;
+
+  pointer-events: visible;
+}
+
+/* custom scrolbar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(0 0 0 / 0.15);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(125deg, #111, #333);
+  border-radius: 10px;
+}
+
+/* custom */
